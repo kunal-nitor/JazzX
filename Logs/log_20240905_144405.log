@@ -1,0 +1,131 @@
+2024-09-05 14:44:05,780 INFO ===================Setup Initialised========================
+2024-09-05 14:44:05,780 INFO creating driver instance created
+2024-09-05 14:44:05,780 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:05,780 INFO ===================Setup Completed==========================
+2024-09-05 14:44:05,780 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:05,788 INFO *********** executing test_004 ****************
+2024-09-05 14:44:05,788 INFO Request url is : https://reqres.in/api/objects/6
+2024-09-05 14:44:05,788 INFO Initializing DELETE REST call from https://reqres.in/api/objects/6
+2024-09-05 14:44:06,302 ERROR Unknown content type or empty response.
+2024-09-05 14:44:06,302 INFO DELETE Response : None
+2024-09-05 14:44:06,302 INFO DELETE request Status code : 400
+2024-09-05 14:44:06,302 ERROR PUT request Failed...!!!
+2024-09-05 14:44:06,302 ERROR Unknown content type or empty response.
+2024-09-05 14:44:06,302 ERROR Response Error Message: None
+2024-09-05 14:44:06,302 ERROR Unknown content type or empty response.
+2024-09-05 14:44:06,302 INFO ===================Teardown Initialised=====================
+2024-09-05 14:44:06,302 INFO Clean-up started
+2024-09-05 14:44:06,302 INFO clean completed
+2024-09-05 14:44:06,302 INFO ===================Teardown Completed=======================
+2024-09-05 14:44:06,302 INFO ===================Setup Initialised========================
+2024-09-05 14:44:06,302 INFO creating driver instance created
+2024-09-05 14:44:06,311 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:06,311 INFO ===================Setup Completed==========================
+2024-09-05 14:44:06,311 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:06,311 INFO *********** executing test_001 ****************
+2024-09-05 14:44:06,311 INFO Request url is : https://reqres.in/api/users/2
+2024-09-05 14:44:06,311 INFO Initializing GET rest call from https://reqres.in/api/users/2
+2024-09-05 14:44:06,397 INFO Response JSON : {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-09-05 14:44:06,397 INFO GET Response : {'data': {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://reqres.in/img/faces/2-image.jpg'}, 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}
+2024-09-05 14:44:06,397 INFO GET Request Status Code : 200
+2024-09-05 14:44:06,397 INFO GET request is Successful.....
+2024-09-05 14:44:06,397 INFO Response JSON : {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-09-05 14:44:06,397 INFO type of json response : <class 'dict'>
+2024-09-05 14:44:06,397 INFO JSON data successfully saved toAPI_Requests/Data/Request_Body\get_data.json
+2024-09-05 14:44:06,397 INFO ===================Teardown Initialised=====================
+2024-09-05 14:44:06,407 INFO Clean-up started
+2024-09-05 14:44:06,407 INFO clean completed
+2024-09-05 14:44:06,407 INFO ===================Teardown Completed=======================
+2024-09-05 14:44:06,407 INFO ===================Setup Initialised========================
+2024-09-05 14:44:06,407 INFO creating driver instance created
+2024-09-05 14:44:06,407 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:06,407 INFO ===================Setup Completed==========================
+2024-09-05 14:44:06,407 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:06,407 INFO *********** executing test_001 ****************
+2024-09-05 14:44:06,407 INFO Request url is : https://reqres.in/api/unknown/23
+2024-09-05 14:44:06,407 INFO Initializing GET rest call from https://reqres.in/api/unknown/23
+2024-09-05 14:44:06,904 ERROR Unknown content type or empty response.
+2024-09-05 14:44:06,919 INFO GET Response : None
+2024-09-05 14:44:06,919 INFO GET Request Status Code : 400
+2024-09-05 14:44:06,919 ERROR GET Request failed....!!!
+2024-09-05 14:44:06,919 ERROR Unknown content type or empty response.
+2024-09-05 14:44:06,919 ERROR Response Error Message: None
+2024-09-05 14:44:06,919 ERROR Unknown content type or empty response.
+2024-09-05 14:44:07,030 INFO ===================Teardown Initialised=====================
+2024-09-05 14:44:07,030 INFO Clean-up started
+2024-09-05 14:44:07,030 INFO clean completed
+2024-09-05 14:44:07,030 INFO ===================Teardown Completed=======================
+2024-09-05 14:44:07,030 INFO ===================Setup Initialised========================
+2024-09-05 14:44:07,030 INFO creating driver instance created
+2024-09-05 14:44:07,030 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:07,030 INFO ===================Setup Completed==========================
+2024-09-05 14:44:07,030 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:07,045 INFO JSON data successfully read from API_Requests/Data/Request_Body\post_data.json
+2024-09-05 14:44:07,045 INFO *********** executing test_005 ****************
+2024-09-05 14:44:07,045 INFO Request url is : https://reqres.in/api/users
+2024-09-05 14:44:07,045 INFO Initializing POST rest call from https://reqres.in/api/users
+2024-09-05 14:44:07,620 INFO Response JSON : {"name":"morpheus","job":"leader","id":"887","createdAt":"2024-09-05T09:12:34.853Z"}
+2024-09-05 14:44:07,635 INFO POST Response : {'name': 'morpheus', 'job': 'leader', 'id': '887', 'createdAt': '2024-09-05T09:12:34.853Z'}
+2024-09-05 14:44:07,635 INFO POST Request Status Code : 201
+2024-09-05 14:44:07,635 INFO POST Request Status Code : 201
+2024-09-05 14:44:07,635 INFO POST request is successful...
+2024-09-05 14:44:07,635 INFO Response JSON : {"name":"morpheus","job":"leader","id":"887","createdAt":"2024-09-05T09:12:34.853Z"}
+2024-09-05 14:44:07,635 INFO ===================Teardown Initialised=====================
+2024-09-05 14:44:07,635 INFO Clean-up started
+2024-09-05 14:44:07,635 INFO clean completed
+2024-09-05 14:44:07,635 INFO ===================Teardown Completed=======================
+2024-09-05 14:44:07,635 INFO ===================Setup Initialised========================
+2024-09-05 14:44:07,635 INFO creating driver instance created
+2024-09-05 14:44:07,635 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:07,635 INFO ===================Setup Completed==========================
+2024-09-05 14:44:07,635 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:07,651 INFO *********** executing test_002 ****************
+2024-09-05 14:44:07,651 INFO Request url is : https://reqres.in/api/users
+2024-09-05 14:44:07,651 INFO Initializing POST rest call from https://reqres.in/api/users
+2024-09-05 14:44:08,147 INFO Response JSON : {"name":"morpheus","job":"leader","id":"571","createdAt":"2024-09-05T09:12:35.376Z"}
+2024-09-05 14:44:08,147 INFO POST Response : {'name': 'morpheus', 'job': 'leader', 'id': '571', 'createdAt': '2024-09-05T09:12:35.376Z'}
+2024-09-05 14:44:08,147 INFO POST Request Status Code : 201
+2024-09-05 14:44:08,147 INFO POST Request Status Code : 201
+2024-09-05 14:44:08,147 INFO POST request is successful...
+2024-09-05 14:44:08,147 INFO Response JSON : {"name":"morpheus","job":"leader","id":"571","createdAt":"2024-09-05T09:12:35.376Z"}
+2024-09-05 14:44:08,147 INFO ===================Teardown Initialised=====================
+2024-09-05 14:44:08,154 INFO Clean-up started
+2024-09-05 14:44:08,154 INFO clean completed
+2024-09-05 14:44:08,154 INFO ===================Teardown Completed=======================
+2024-09-05 14:44:08,154 INFO ===================Setup Initialised========================
+2024-09-05 14:44:08,154 INFO creating driver instance created
+2024-09-05 14:44:08,161 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:08,161 INFO ===================Setup Completed==========================
+2024-09-05 14:44:08,167 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:08,167 INFO JSON data successfully read from API_Requests/Data/Request_Body\put_data.json
+2024-09-05 14:44:08,167 INFO *********** executing test_003 ****************
+2024-09-05 14:44:08,167 INFO Request url is : https://reqres.in/api/users/2
+2024-09-05 14:44:08,167 INFO Initializing PUT rest call from https://reqres.in/api/users/2
+2024-09-05 14:44:08,664 INFO Response JSON : {"name":"morpheus","job":"zion resident","updatedAt":"2024-09-05T09:12:35.871Z"}
+2024-09-05 14:44:08,664 INFO PUT Response : {'name': 'morpheus', 'job': 'zion resident', 'updatedAt': '2024-09-05T09:12:35.871Z'}
+2024-09-05 14:44:08,664 INFO PUT request Status code : 200
+2024-09-05 14:44:08,664 INFO PUT request is successful.....
+2024-09-05 14:44:08,664 INFO Response JSON : {"name":"morpheus","job":"zion resident","updatedAt":"2024-09-05T09:12:35.871Z"}
+2024-09-05 14:44:08,664 INFO ===================Teardown Initialised=====================
+2024-09-05 14:44:08,664 INFO Clean-up started
+2024-09-05 14:44:08,664 INFO clean completed
+2024-09-05 14:44:08,664 INFO ===================Teardown Completed=======================
+2024-09-05 14:44:08,664 INFO ===================Setup Initialised========================
+2024-09-05 14:44:08,664 INFO creating driver instance created
+2024-09-05 14:44:08,679 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:08,679 INFO ===================Setup Completed==========================
+2024-09-05 14:44:08,681 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:44:08,684 INFO *********** executing test_007 ****************
+2024-09-05 14:44:08,684 INFO Request url is : https://reqres.in/api/register
+2024-09-05 14:44:08,684 INFO Initializing POST rest call from https://reqres.in/api/register
+2024-09-05 14:44:09,157 INFO Response JSON : {"error":"Missing password"}
+2024-09-05 14:44:09,157 INFO POST Response : {'error': 'Missing password'}
+2024-09-05 14:44:09,157 INFO POST Request Status Code : 400
+2024-09-05 14:44:09,157 ERROR POST Request Failed
+2024-09-05 14:44:09,157 INFO Response JSON : {"error":"Missing password"}
+2024-09-05 14:44:09,157 ERROR Response Error message: {'error': 'Missing password'}
+2024-09-05 14:44:09,157 INFO Response JSON : {"error":"Missing password"}
+2024-09-05 14:44:09,184 INFO ===================Teardown Initialised=====================
+2024-09-05 14:44:09,184 INFO Clean-up started
+2024-09-05 14:44:09,184 INFO clean completed
+2024-09-05 14:44:09,188 INFO ===================Teardown Completed=======================

@@ -1,0 +1,46 @@
+JazzX/
+|
+|-- API_Requests/
+    |-- Data/
+             |- Request_Body/
+                |- post_data.json
+                |- put_data.json
+             |- Response_Body
+                |- get_data.json
+
+    |-- Lib/
+            |-- __init__.py
+            |-- Auth_details.py
+            |-- Rest_Client.py
+            |-- File_Operations.py
+    |-- Tests/
+            |-- __init__.py
+            |-- test_delete_request.py
+            |-- test_get_request.py
+            |-- test_post_request.py
+            |-- test_post_data_request.py
+            |-- test_put_request.py
+    |-- conf/
+            |-- __init__.py
+            |-- config.ini
+            |-- config.py
+            |-- conftest.py
+            |-- logger.py
+            |-- pytest.ini
+    |-- Logs/
+            |-- log_20240828_172445.log
+            |-- log_20240828_173640.log
+    |-- Reports/
+            |-- Allure_reports/
+                |-- 5ec124e0-c4dc-4124-96c0-3d781f7d90f8-container.json
+                |-- 7bf6fe5a-6471-4808-8d54-960778cd2b00-attachment.txt
+                |-- 7df51b1e-3229-4b67-b91a-357b55060143-container.json
+                |-- 9c5bc5f9-05aa-47f8-bf25-789056a784e9-attachment.txt
+            |-- HTML_Reports/
+                |-- getRequest_report.html
+                |-- postRequest_report.html
+    |-- Requirements/
+            |-- Architecture.txt
+            |-- README.txt
+            |-- Requirements.txt
+    |-- Certificates

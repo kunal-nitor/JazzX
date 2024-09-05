@@ -1,0 +1,19 @@
+2024-09-05 14:19:37,369 INFO ===================Setup Initialised========================
+2024-09-05 14:19:37,369 INFO creating driver instance created
+2024-09-05 14:19:37,369 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:19:37,369 INFO ===================Setup Completed==========================
+2024-09-05 14:19:37,369 INFO Base url is : https://reqres.in/api/
+2024-09-05 14:19:37,378 INFO JSON data successfully read from API_Requests/Data/Request_Body\post_data.json
+2024-09-05 14:19:37,378 INFO *********** executing test_005 ****************
+2024-09-05 14:19:37,378 INFO Request url is : https://reqres.in/api/users
+2024-09-05 14:19:37,378 INFO Initializing POST rest call from https://reqres.in/api/users
+2024-09-05 14:19:37,854 INFO Response JSON : {"name":"morpheus","job":"leader","id":"1","createdAt":"2024-09-05T08:48:05.086Z"}
+2024-09-05 14:19:37,854 INFO POST Response : {'name': 'morpheus', 'job': 'leader', 'id': '1', 'createdAt': '2024-09-05T08:48:05.086Z'}
+2024-09-05 14:19:37,854 INFO POST Request Status Code : 201
+2024-09-05 14:19:37,854 INFO POST Request Status Code : 201
+2024-09-05 14:19:37,854 INFO POST request is successful...
+2024-09-05 14:19:37,854 INFO Response JSON : {"name":"morpheus","job":"leader","id":"1","createdAt":"2024-09-05T08:48:05.086Z"}
+2024-09-05 14:19:37,854 INFO ===================Teardown Initialised=====================
+2024-09-05 14:19:37,854 INFO Clean-up started
+2024-09-05 14:19:37,854 INFO clean completed
+2024-09-05 14:19:37,854 INFO ===================Teardown Completed=======================

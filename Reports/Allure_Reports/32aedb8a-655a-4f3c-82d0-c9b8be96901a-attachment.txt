@@ -1,0 +1,20 @@
+[32mINFO    [0m conf.logger:conftest.py:27 Starting test setup process...
+[32mINFO    [0m conf.logger:conftest.py:29 Generating authentication token...
+[32mINFO    [0m conf.logger:Rest_Client.py:17 Base url is : https://reqres.in/api/
+[32mINFO    [0m conf.logger:conftest.py:31 Authentication token generated successfully.
+[32mINFO    [0m conf.logger:conftest.py:32 Test setup completed. Ready to execute tests.
+[32mINFO    [0m conf.logger:Rest_Client.py:17 Base url is : https://reqres.in/api/
+[32mINFO    [0m conf.logger:test_no_data_found_request.py:23 *********** executing test_001 ****************
+[32mINFO    [0m conf.logger:Rest_Client.py:42 Request url is : https://reqres.in/api/unknown/23
+[32mINFO    [0m conf.logger:Rest_Client.py:47 Initializing GET rest call from https://reqres.in/api/unknown/23
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:240 Unknown content type or empty response.
+[32mINFO    [0m conf.logger:Rest_Client.py:50 GET Response : None
+[32mINFO    [0m conf.logger:Rest_Client.py:51 GET Request Status Code : 400
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:60 GET Request failed....!!!
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:240 Unknown content type or empty response.
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:61 Response Error Message: None
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:240 Unknown content type or empty response.
+[32mINFO    [0m conf.logger:conftest.py:34 Starting test cleanup process...
+[32mINFO    [0m conf.logger:conftest.py:36 Cleaning up authentication token...
+[32mINFO    [0m conf.logger:conftest.py:37 Authentication token cleaned up successfully.
+[32mINFO    [0m conf.logger:conftest.py:38 Test cleanup completed. Resources released.
