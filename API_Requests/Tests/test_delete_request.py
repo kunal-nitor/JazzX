@@ -18,7 +18,8 @@ class Test_004:
         logging.info("*********** executing test_004 ****************")
 
         # send delete request
-        delete_request = self.client.delete_request(end_point="objects/6",headers=self.headers,json_data_fmt=True,response_with_status_code=True)
+        delete_request,status_code = self.client.delete_request(end_point="objects/6",headers=self.headers,json_data_fmt=True,response_with_status_code=True)
 
         # verify to get response
         assert delete_request is not None, "DELETE request returned None"
+        assert status_code == 204
