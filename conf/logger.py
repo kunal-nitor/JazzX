@@ -4,8 +4,8 @@ import time
 
 
 def logGen():
-    logging.basicConfig(filename=f'API_Requests/Logs/log_{time.strftime('%Y%m%d_%H%M%S')}.log',format='%(asctime)s %(levelname)s %(message)s',
-                    datefmt='%m %d %Y %H %M %S', filemode='w')
+    logging.basicConfig(filename=f"API_Requests/Logs/log_{time.strftime('%Y%m%d_%H%M%S')}.log",format="%(asctime)s %(levelname)s %(message)s",
+                    datefmt="%m %d %Y %H %M %S", filemode="w")
 
     log_directory = "Logs"
     if not os.path.exists(log_directory):
