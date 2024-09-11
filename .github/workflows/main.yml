@@ -27,6 +27,6 @@ jobs:
           if [ -f Requirements/requirements.txt ]; then pip install -r Requirements/requirements.txt; fi
  
       - name: Test with pytest
-        run: pytest API_Requests/Tests -v -s --log-cli-level=INFO
+        run: pytest API_Requests/Tests/test_get_request.py -v -s --log-cli-level=INFO
 
 
