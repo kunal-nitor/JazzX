@@ -75,9 +75,13 @@ def read_json_from_file(file_path,request_dir='API_Requests/Data/Request_Body'):
     """
     try:
         full_path = os.path.join(request_dir,file_path)
+
+        # Normalize the path for logging
+        full_path_normalized = full_path.replace(os.sep, '/')
+
         with open(full_path, 'r') as file:
             data = json.load(file)
-        logger.info(f"JSON data successfully read from {full_path}")
+        logger.info(f"JSON data successfully read from {full_path_normalized}")
         return data
     except json.JSONDecodeError as e:
         logger.error(f"Failed to decode JSON: {e}")
