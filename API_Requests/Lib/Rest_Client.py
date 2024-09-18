@@ -2,6 +2,7 @@ import time
 import requests
 import json
 from conf.logger import logGen
+from API_Requests.Lib.File_Operations import save_json_to_file
 
 logger = logGen()
 
@@ -19,7 +20,8 @@ class RestClient:
 
 
     def get_request(self, end_point=None, data=None, headers=None, json_data_fmt=False, params=None, fmt='json',
-                retries=0, response_with_status_code=False,verify=True):
+                retries=0, response_with_status_code=False,auto_save=False):
+
         """
         This method is to send 'Get' request
         :param end_point(str): API endpoint/url
@@ -30,6 +32,7 @@ class RestClient:
         :param fmt: used for return response type
         :param retries:
         :param response_with_status_code (bool): True if status code is required else false
+        :param auto_save (bool) : saves response into json file if True else False
         :return:
 
         """
@@ -47,19 +50,29 @@ class RestClient:
             logger.info(f"Initializing GET rest call from {request_url}")
             get_response = self.http_session.get(request_url, params=params, headers=headers,
                                              data=data, verify=True)
-            logger.info(f"GET Response : {self.parse_response(get_response)}")
+            response_data = self.parse_response(get_response)
+
+            logger.info(f"GET Response : {response_data}")
             logger.info(f"GET Request Status Code : {get_response.status_code}")
+
             if get_response.status_code in self.success_status_code:
                 logger.info("GET request is Successful.....")
+
+                if auto_save:
+                    save_json_to_file(response_data)
+
                 if fmt == "raw":
                     return get_response
+
                 if response_with_status_code:
                     return self.parse_response(get_response), get_response.status_code
-                return self.parse_response(get_response)
+
+                return response_data
             else:
                 logger.error(f"GET Request failed....!!!")
                 logger.error(f"Response Error Message: {self.parse_response(get_response)}")
                 return self.parse_response(get_response), get_response.status_code
+
         except Exception as exc:
             if retries > 0:
                 logger.info(f"GET request failed, retrying : {str(retries)} more times...")
@@ -74,7 +87,7 @@ class RestClient:
 
 
     def post_request(self, end_point, data=None, headers=None, json_data_fmt=False, params=None,
-                     fmt='json', retries=1, response_with_status_code=False):
+                     fmt='json', retries=1, response_with_status_code=False,auto_save=False):
         """
         This method is used to send 'POST' Request
         :param end_point: API end point/url
@@ -85,6 +98,7 @@ class RestClient:
         :param fmt(str) : Used for response type json or row
         :param retries: Number of Retires
         :param response_with_status_code(bool): True if status code is required else false
+        :param auto_save (bool) : saves response into json file if True else False
         :return: response of the request
 
         """
@@ -96,14 +110,18 @@ class RestClient:
         try:
             logger.info(f"Initializing POST rest call from {request_url}")
             post_response = self.http_session.post(request_url, params=params, headers=headers, data=data, verify=True)
-            logger.info(f"POST Response : {self.parse_response(post_response)}")
+            response_data = self.parse_response(post_response)
+
+            logger.info(f"POST Response : {response_data}")
             logger.info(f"POST Request Status Code : {post_response.status_code}")
             if post_response.status_code in self.success_status_code:
-                logger.info(f"POST Request Status Code : {post_response.status_code}")
-                if post_response.status_code in self.success_status_code:
                     logger.info("POST request is successful...")
+                    if auto_save:
+                        save_json_to_file(response_data)
+
                     if fmt == 'raw':
                         return post_response
+
                     if response_with_status_code:
                         return self.parse_response(post_response), post_response.status_code
                     return self.parse_response(post_response)
@@ -125,7 +143,7 @@ class RestClient:
 
 
     def put_request(self, end_point, data=None, headers=None, json_data_fmt=False, params=None,
-                    fmt="json", response_with_status_code=False):
+                    fmt="json", response_with_status_code=False,auto_save=False):
         """
         This method is to send put request
         :param end_point (str): API endpoint/url
@@ -135,6 +153,7 @@ class RestClient:
         :param params (dict): parameters for a request
         :param fmt(str): Used for response type json or raw
         :param response_with_status_code (bool): True if status code os required else False
+        :param auto_save (bool) : saves response into json file if True else False
         :return: response of the request
 
         """
@@ -149,10 +168,16 @@ class RestClient:
             logger.info(f"Initializing PUT rest call from {request_url}")
             put_response = self.http_session.put(request_url, params=params, headers=headers,
                                              data=data,verify=True)
+            response_data = self.parse_response(put_response)
+
             logger.info(f"PUT Response : {self.parse_response(put_response)}")
             logger.info(f"PUT request Status code : {put_response.status_code}")
+
             if put_response.status_code in self.success_status_code:
                 logger.info("PUT request is successful.....")
+
+                if auto_save:
+                    save_json_to_file(response_data)
                 if fmt == "raw":
                     return put_response
                 if response_with_status_code:
@@ -168,7 +193,7 @@ class RestClient:
 
 
     def delete_request(self, end_point, data=None, headers=None, json_data_fmt=None, params=None,
-                       fmt="json", response_with_status_code=False):
+                       fmt="json", response_with_status_code=False,auto_save=False):
         """
         This method is to send delete request
         :param end_point (str): API endpoint/URL
@@ -178,6 +203,7 @@ class RestClient:
         :param params: Used for response type json or raw
         :param fmt:
         :param response_with_status_coode (bool): True if Status code os required else False
+        :param auto_save (bool) : saves response into json file if True else False
         :return: Response of the request
 
         """
@@ -189,10 +215,15 @@ class RestClient:
         try:
             logger.info(f"Initializing DELETE REST call from {request_url}")
             delete_response = self.http_session.delete(request_url, params=params, headers=headers, data=data,verify=True)
+            response_data = self.parse_response(delete_response)
+
             logger.info(f"DELETE Response : {self.parse_response(delete_response)}")
             logger.info(f"DELETE request Status code : {delete_response.status_code}")
+
             if delete_response.status_code in self.success_status_code:
                 logger.info(f"DELETE request is successful....")
+                if auto_save:
+                    save_json_to_file(response_data)
                 if fmt == "raw":
                     return delete_response
                 if response_with_status_code:

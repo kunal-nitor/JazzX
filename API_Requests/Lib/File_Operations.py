@@ -1,17 +1,22 @@
+import datetime
 import json
 import os.path
-from conf.conftest import logger
+from conf.logger import logger
 
 
-def save_json_to_file(response,file_path,response_dir='API_Requests/Data/Response_Body'):
+
+def save_json_to_file(response,response_dir='API_Requests/Data/Response_Body'):
     """
     Prepare the response data and save it to a JSON file.
 
     :param response_dir: The response directory where all response file will be stored
     :param response: The response data to be saved, can be a dict, list, tuple, or string.
-    :param file_path: Path to the file where the JSON data will be saved.
 
     """
+
+    # Create a folder based on the current date
+    current_date = datetime.datetime.now().strftime("%Y_%m_%d")
+    date_folder_path = os.path.join(response_dir, current_date)
 
     def handle_tuple(data):
         return data[0]
@@ -33,16 +38,27 @@ def save_json_to_file(response,file_path,response_dir='API_Requests/Data/Respons
                     }
 
     try:
+        # Create the directory if it doesn't exist
+        os.makedirs(date_folder_path, exist_ok=True)
+
+        # Prepare the timestamped file path
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        full_file_path = os.path.join(date_folder_path, f"response_{timestamp}.json")
+
+
+        # Normalize the path for logging
+        full_path_normalized = full_file_path.replace(os.sep,'/')
+
         # Select the handler based on the type of response
         handler = handler_mapping.get(type(response))
         if not handler:
             raise TypeError("Unsupported response type")
         json_data = handler(response)
+
         # Save the JSON data to the specified file
-        full_path = os.path.join(response_dir, file_path)
-        with open(full_path,'w') as file:
-            json.dump(json_data, file, indent=4, separators=(',',': '))
-            logger.info(f"JSON data successfully saved to {full_path}")
+        with open(full_file_path, 'w') as file:
+            json.dump(json_data, file, indent=4, separators=(',', ': '))
+            logger.info(f"JSON data successfully saved to {full_path_normalized}")
     except (json.JSONDecodeError, TypeError) as e:
         logger.error(f"An error occurred while preparing JSON data:{e}")
         raise e
