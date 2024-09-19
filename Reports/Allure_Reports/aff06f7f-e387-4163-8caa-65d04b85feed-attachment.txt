@@ -1,0 +1,19 @@
+[32mINFO    [0m conf.logger:conftest.py:27 Starting test setup process...
+[32mINFO    [0m conf.logger:conftest.py:29 Generating authentication token...
+[32mINFO    [0m conf.logger:Rest_Client.py:17 Base url is : https://reqres.in/api/
+[32mINFO    [0m conf.logger:conftest.py:31 Authentication token generated successfully.
+[32mINFO    [0m conf.logger:conftest.py:32 Test setup completed. Ready to execute tests.
+[32mINFO    [0m conf.logger:Rest_Client.py:17 Base url is : https://reqres.in/api/
+[32mINFO    [0m conf.logger:File_Operations.py:64 JSON data successfully read from API_Requests/Data/Request_Body\post_data.json
+[32mINFO    [0m conf.logger:test_post_data_request.py:22 *********** executing test_005 ****************
+[32mINFO    [0m conf.logger:Rest_Client.py:92 Request url is : https://reqres.in/api/users
+[32mINFO    [0m conf.logger:Rest_Client.py:97 Initializing POST rest call from https://reqres.in/api/users
+[32mINFO    [0m conf.logger:Rest_Client.py:221 Response JSON : {"name":"morpheus","job":"leader","id":"9","createdAt":"2024-09-17T11:54:38.687Z"}
+[32mINFO    [0m conf.logger:Rest_Client.py:99 POST Response : {'name': 'morpheus', 'job': 'leader', 'id': '9', 'createdAt': '2024-09-17T11:54:38.687Z'}
+[32mINFO    [0m conf.logger:Rest_Client.py:100 POST Request Status Code : 201
+[32mINFO    [0m conf.logger:Rest_Client.py:102 POST request is successful...
+[32mINFO    [0m conf.logger:Rest_Client.py:221 Response JSON : {"name":"morpheus","job":"leader","id":"9","createdAt":"2024-09-17T11:54:38.687Z"}
+[32mINFO    [0m conf.logger:conftest.py:34 Starting test cleanup process...
+[32mINFO    [0m conf.logger:conftest.py:36 Cleaning up authentication token...
+[32mINFO    [0m conf.logger:conftest.py:37 Authentication token cleaned up successfully.
+[32mINFO    [0m conf.logger:conftest.py:38 Test cleanup completed. Resources released.

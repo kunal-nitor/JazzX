@@ -1,0 +1,141 @@
+2024-09-18 19:08:00,680 INFO Starting test setup process...
+2024-09-18 19:08:00,680 INFO Generating authentication token...
+2024-09-18 19:08:00,680 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:00,680 INFO Authentication token generated successfully.
+2024-09-18 19:08:00,680 INFO Test setup completed. Ready to execute tests.
+2024-09-18 19:08:00,680 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:00,680 INFO *********** executing test_004 ****************
+2024-09-18 19:08:00,680 INFO Request url is : https://reqres.in/api/objects/6
+2024-09-18 19:08:00,680 INFO Initializing DELETE REST call from https://reqres.in/api/objects/6
+2024-09-18 19:08:01,213 ERROR Unknown content type or empty response.
+2024-09-18 19:08:01,213 ERROR Unknown content type or empty response.
+2024-09-18 19:08:01,213 INFO DELETE Response : None
+2024-09-18 19:08:01,213 INFO DELETE request Status code : 400
+2024-09-18 19:08:01,213 ERROR PUT request Failed...!!!
+2024-09-18 19:08:01,213 ERROR Unknown content type or empty response.
+2024-09-18 19:08:01,213 ERROR Response Error Message: None
+2024-09-18 19:08:01,213 ERROR Unknown content type or empty response.
+2024-09-18 19:08:01,323 INFO Starting test cleanup process...
+2024-09-18 19:08:01,323 INFO Cleaning up authentication token...
+2024-09-18 19:08:01,323 INFO Authentication token cleaned up successfully.
+2024-09-18 19:08:01,323 INFO Test cleanup completed. Resources released.
+2024-09-18 19:08:01,323 INFO Starting test setup process...
+2024-09-18 19:08:01,323 INFO Generating authentication token...
+2024-09-18 19:08:01,323 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:01,323 INFO Authentication token generated successfully.
+2024-09-18 19:08:01,323 INFO Test setup completed. Ready to execute tests.
+2024-09-18 19:08:01,339 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:01,339 INFO *********** executing test_001 ****************
+2024-09-18 19:08:01,339 INFO Request url is : https://reqres.in/api/users/2
+2024-09-18 19:08:01,339 INFO Initializing GET rest call from https://reqres.in/api/users/2
+2024-09-18 19:08:01,402 INFO Response JSON : {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-09-18 19:08:01,402 INFO GET Response : {'data': {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://reqres.in/img/faces/2-image.jpg'}, 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}
+2024-09-18 19:08:01,402 INFO GET Request Status Code : 200
+2024-09-18 19:08:01,402 INFO GET request is Successful.....
+2024-09-18 19:08:01,418 INFO JSON data successfully saved to API_Requests/Data/Response_Body/2024_09_18/response_20240918_190801.json
+2024-09-18 19:08:01,418 INFO Response JSON : {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-09-18 19:08:01,418 INFO type of json response : <class 'dict'>
+2024-09-18 19:08:01,418 INFO Starting test cleanup process...
+2024-09-18 19:08:01,418 INFO Cleaning up authentication token...
+2024-09-18 19:08:01,418 INFO Authentication token cleaned up successfully.
+2024-09-18 19:08:01,418 INFO Test cleanup completed. Resources released.
+2024-09-18 19:08:01,418 INFO Starting test setup process...
+2024-09-18 19:08:01,418 INFO Generating authentication token...
+2024-09-18 19:08:01,418 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:01,418 INFO Authentication token generated successfully.
+2024-09-18 19:08:01,418 INFO Test setup completed. Ready to execute tests.
+2024-09-18 19:08:01,418 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:01,418 INFO *********** executing test_006 ****************
+2024-09-18 19:08:01,418 INFO Request url is : https://reqres.in/api/unknown/23
+2024-09-18 19:08:01,418 INFO Initializing GET rest call from https://reqres.in/api/unknown/23
+2024-09-18 19:08:01,904 ERROR Unknown content type or empty response.
+2024-09-18 19:08:01,904 INFO GET Response : None
+2024-09-18 19:08:01,904 INFO GET Request Status Code : 400
+2024-09-18 19:08:01,904 ERROR GET Request failed....!!!
+2024-09-18 19:08:01,904 ERROR Unknown content type or empty response.
+2024-09-18 19:08:01,904 ERROR Response Error Message: None
+2024-09-18 19:08:01,904 ERROR Unknown content type or empty response.
+2024-09-18 19:08:01,920 INFO Starting test cleanup process...
+2024-09-18 19:08:01,920 INFO Cleaning up authentication token...
+2024-09-18 19:08:01,920 INFO Authentication token cleaned up successfully.
+2024-09-18 19:08:01,920 INFO Test cleanup completed. Resources released.
+2024-09-18 19:08:01,920 INFO Starting test setup process...
+2024-09-18 19:08:01,920 INFO Generating authentication token...
+2024-09-18 19:08:01,920 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:01,920 INFO Authentication token generated successfully.
+2024-09-18 19:08:01,920 INFO Test setup completed. Ready to execute tests.
+2024-09-18 19:08:01,920 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:01,920 INFO JSON data successfully read from API_Requests/Data/Request_Body\post_data.json
+2024-09-18 19:08:01,920 INFO *********** executing test_005 ****************
+2024-09-18 19:08:01,920 INFO Request url is : https://reqres.in/api/users
+2024-09-18 19:08:01,920 INFO Initializing POST rest call from https://reqres.in/api/users
+2024-09-18 19:08:02,312 INFO Response JSON : {"name":"morpheus","job":"leader","id":"127","createdAt":"2024-09-18T13:36:08.314Z"}
+2024-09-18 19:08:02,312 INFO POST Response : {'name': 'morpheus', 'job': 'leader', 'id': '127', 'createdAt': '2024-09-18T13:36:08.314Z'}
+2024-09-18 19:08:02,312 INFO POST Request Status Code : 201
+2024-09-18 19:08:02,312 INFO POST request is successful...
+2024-09-18 19:08:02,327 INFO JSON data successfully saved to API_Requests/Data/Response_Body/2024_09_18/response_20240918_190802.json
+2024-09-18 19:08:02,327 INFO Response JSON : {"name":"morpheus","job":"leader","id":"127","createdAt":"2024-09-18T13:36:08.314Z"}
+2024-09-18 19:08:02,327 INFO Starting test cleanup process...
+2024-09-18 19:08:02,327 INFO Cleaning up authentication token...
+2024-09-18 19:08:02,327 INFO Authentication token cleaned up successfully.
+2024-09-18 19:08:02,327 INFO Test cleanup completed. Resources released.
+2024-09-18 19:08:02,327 INFO Starting test setup process...
+2024-09-18 19:08:02,327 INFO Generating authentication token...
+2024-09-18 19:08:02,327 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:02,327 INFO Authentication token generated successfully.
+2024-09-18 19:08:02,327 INFO Test setup completed. Ready to execute tests.
+2024-09-18 19:08:02,327 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:02,327 INFO *********** executing test_002 ****************
+2024-09-18 19:08:02,327 INFO Request url is : https://reqres.in/api/users
+2024-09-18 19:08:02,327 INFO Initializing POST rest call from https://reqres.in/api/users
+2024-09-18 19:08:02,720 INFO Response JSON : {"name":"morpheus","job":"leader","id":"164","createdAt":"2024-09-18T13:36:08.723Z"}
+2024-09-18 19:08:02,720 INFO POST Response : {'name': 'morpheus', 'job': 'leader', 'id': '164', 'createdAt': '2024-09-18T13:36:08.723Z'}
+2024-09-18 19:08:02,720 INFO POST Request Status Code : 201
+2024-09-18 19:08:02,720 INFO POST request is successful...
+2024-09-18 19:08:02,735 INFO JSON data successfully saved to API_Requests/Data/Response_Body/2024_09_18/response_20240918_190802.json
+2024-09-18 19:08:02,735 INFO Response JSON : {"name":"morpheus","job":"leader","id":"164","createdAt":"2024-09-18T13:36:08.723Z"}
+2024-09-18 19:08:02,735 INFO Starting test cleanup process...
+2024-09-18 19:08:02,735 INFO Cleaning up authentication token...
+2024-09-18 19:08:02,735 INFO Authentication token cleaned up successfully.
+2024-09-18 19:08:02,735 INFO Test cleanup completed. Resources released.
+2024-09-18 19:08:02,735 INFO Starting test setup process...
+2024-09-18 19:08:02,735 INFO Generating authentication token...
+2024-09-18 19:08:02,735 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:02,735 INFO Authentication token generated successfully.
+2024-09-18 19:08:02,735 INFO Test setup completed. Ready to execute tests.
+2024-09-18 19:08:02,745 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:02,745 INFO JSON data successfully read from API_Requests/Data/Request_Body\put_data.json
+2024-09-18 19:08:02,745 INFO *********** executing test_003 ****************
+2024-09-18 19:08:02,745 INFO Request url is : https://reqres.in/api/users/2
+2024-09-18 19:08:02,745 INFO Initializing PUT rest call from https://reqres.in/api/users/2
+2024-09-18 19:08:03,143 INFO Response JSON : {"name":"morpheus","job":"zion resident","updatedAt":"2024-09-18T13:36:09.132Z"}
+2024-09-18 19:08:03,143 INFO Response JSON : {"name":"morpheus","job":"zion resident","updatedAt":"2024-09-18T13:36:09.132Z"}
+2024-09-18 19:08:03,143 INFO PUT Response : {'name': 'morpheus', 'job': 'zion resident', 'updatedAt': '2024-09-18T13:36:09.132Z'}
+2024-09-18 19:08:03,143 INFO PUT request Status code : 200
+2024-09-18 19:08:03,143 INFO PUT request is successful.....
+2024-09-18 19:08:03,146 INFO JSON data successfully saved to API_Requests/Data/Response_Body/2024_09_18/response_20240918_190803.json
+2024-09-18 19:08:03,146 INFO Response JSON : {"name":"morpheus","job":"zion resident","updatedAt":"2024-09-18T13:36:09.132Z"}
+2024-09-18 19:08:03,146 INFO Starting test cleanup process...
+2024-09-18 19:08:03,146 INFO Cleaning up authentication token...
+2024-09-18 19:08:03,146 INFO Authentication token cleaned up successfully.
+2024-09-18 19:08:03,146 INFO Test cleanup completed. Resources released.
+2024-09-18 19:08:03,146 INFO Starting test setup process...
+2024-09-18 19:08:03,146 INFO Generating authentication token...
+2024-09-18 19:08:03,146 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:03,146 INFO Authentication token generated successfully.
+2024-09-18 19:08:03,146 INFO Test setup completed. Ready to execute tests.
+2024-09-18 19:08:03,146 INFO Base url is : https://reqres.in/api/
+2024-09-18 19:08:03,158 INFO *********** executing test_007 ****************
+2024-09-18 19:08:03,158 INFO Request url is : https://reqres.in/api/register
+2024-09-18 19:08:03,158 INFO Initializing POST rest call from https://reqres.in/api/register
+2024-09-18 19:08:03,648 INFO Response JSON : {"error":"Missing password"}
+2024-09-18 19:08:03,648 INFO POST Response : {'error': 'Missing password'}
+2024-09-18 19:08:03,648 INFO POST Request Status Code : 400
+2024-09-18 19:08:03,648 ERROR POST Request Failed
+2024-09-18 19:08:03,648 INFO Response JSON : {"error":"Missing password"}
+2024-09-18 19:08:03,648 ERROR Response Error message: {'error': 'Missing password'}
+2024-09-18 19:08:03,648 INFO Response JSON : {"error":"Missing password"}
+2024-09-18 19:08:03,668 INFO Starting test cleanup process...
+2024-09-18 19:08:03,669 INFO Cleaning up authentication token...
+2024-09-18 19:08:03,669 INFO Authentication token cleaned up successfully.
+2024-09-18 19:08:03,669 INFO Test cleanup completed. Resources released.

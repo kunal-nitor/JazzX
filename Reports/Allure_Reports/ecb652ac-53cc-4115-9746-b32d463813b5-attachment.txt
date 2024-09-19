@@ -1,0 +1,20 @@
+[32mINFO    [0m conf.logger:conftest.py:27 Starting test setup process...
+[32mINFO    [0m conf.logger:conftest.py:29 Generating authentication token...
+[32mINFO    [0m conf.logger:Rest_Client.py:17 Base url is : https://reqres.in/api/
+[32mINFO    [0m conf.logger:conftest.py:31 Authentication token generated successfully.
+[32mINFO    [0m conf.logger:conftest.py:32 Test setup completed. Ready to execute tests.
+[32mINFO    [0m conf.logger:Rest_Client.py:17 Base url is : https://reqres.in/api/
+[32mINFO    [0m conf.logger:test_delete_request.py:18 *********** executing test_004 ****************
+[32mINFO    [0m conf.logger:Rest_Client.py:184 Request url is : https://reqres.in/api/objects/6
+[32mINFO    [0m conf.logger:Rest_Client.py:188 Initializing DELETE REST call from https://reqres.in/api/objects/6
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:238 Unknown content type or empty response.
+[32mINFO    [0m conf.logger:Rest_Client.py:190 DELETE Response : None
+[32mINFO    [0m conf.logger:Rest_Client.py:191 DELETE request Status code : 400
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:200 PUT request Failed...!!!
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:238 Unknown content type or empty response.
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:201 Response Error Message: None
+[31m[1mERROR   [0m conf.logger:Rest_Client.py:238 Unknown content type or empty response.
+[32mINFO    [0m conf.logger:conftest.py:34 Starting test cleanup process...
+[32mINFO    [0m conf.logger:conftest.py:36 Cleaning up authentication token...
+[32mINFO    [0m conf.logger:conftest.py:37 Authentication token cleaned up successfully.
+[32mINFO    [0m conf.logger:conftest.py:38 Test cleanup completed. Resources released.

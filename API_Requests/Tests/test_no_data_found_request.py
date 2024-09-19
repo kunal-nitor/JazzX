@@ -6,8 +6,8 @@ from API_Requests.Lib.File_Operations import save_json_to_file
 
 
 
-class Test_001:
-    def test_001(self,setup_teardown):
+class Test_006:
+    def test_006(self,setup_teardown):
 
         """" Test to check GET Request is successful with response and successful status code"""
 
